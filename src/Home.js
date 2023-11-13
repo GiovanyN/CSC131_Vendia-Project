@@ -19,7 +19,6 @@ const { client } = vendiaClient();
 const Home = () => {
   const {userData} = useData();
 
-
   const [addDeviceState, setAddDeviceState] = useState(false);
 
   const [addTestState, setAddTestState] = useState(false);
@@ -58,7 +57,6 @@ const Home = () => {
       Archived: false,
       DeviceTitle: deviceTitle,
     });
-    console.log("addDevice started")
     setAddDeviceState(false);
   };
 

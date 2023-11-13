@@ -30,19 +30,15 @@ const DeviceListHome = () => {
             } else {
                 setDeviceList(listDevicesResponse?.items);
             }
+
         }
-        
-        client.entities.devices.onAdd((data) => {
-            alert(`A new product named ${data.result.name} been added!`);
-            console.log("Device Added!");
-            listDevices();
-            
-          });
-
         listDevices();
+    }, [deviceName])
 
 
-    }, [])
+
+
+    
 
     return (
         <div className="home-test-devices">
